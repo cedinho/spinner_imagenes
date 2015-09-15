@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".SpinnerActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Frutas"
+        android:id="@+id/txtFrutas"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="28dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Frutasspinner"
+        android:layout_below="@+id/txtFrutas"
+        android:layout_alignLeft="@+id/txtFrutas"
+        android:layout_alignStart="@+id/txtFrutas" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bebidas"
+        android:id="@+id/txtBebidas"
+        android:layout_below="@+id/Frutasspinner"
+        android:layout_alignLeft="@+id/Frutasspinner"
+        android:layout_alignStart="@+id/Frutasspinner"
+        android:layout_marginTop="66dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Bebidasspinner"
+        android:layout_below="@+id/txtBebidas"
+        android:layout_alignLeft="@+id/txtBebidas"
+        android:layout_alignStart="@+id/txtBebidas" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Comida"
+        android:id="@+id/textView"
+        android:layout_below="@+id/Bebidasspinner"
+        android:layout_alignLeft="@+id/Bebidasspinner"
+        android:layout_alignStart="@+id/Bebidasspinner"
+        android:layout_marginTop="77dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Comidaspinner"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+</RelativeLayout>
